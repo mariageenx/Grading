@@ -1,0 +1,36 @@
+using System;
+
+namespace Activity1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //variable declation
+            string name;
+            Console.Write("Input Student Name: ");
+            name = Console.ReadLine();
+
+            int pg, mg, fg, sum, average;
+            Console.Write("Input Prelim Grade: ");
+            pg = int.Parse(Console.ReadLine());
+            Console.Write("Input Midterm Grade: ");
+            mg = int.Parse(Console.ReadLine());
+            Console.Write("Input Final Grade: ");
+            fg = int.Parse(Console.ReadLine());
+
+            //process
+            int div = 3;
+            sum = pg + mg + fg;
+            average = sum / div;
+
+
+            //ouput
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("Hi! " + name + ", Your Average grade is " + average);
+        }
+    }
+}
+
+
+
